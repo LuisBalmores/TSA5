@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu Website</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="text-center mt-4 mb-4">PH Streetfood Express</h1>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://www.willflyforfood.net/wp-content/uploads/2017/09/filipino-street-food-balut.jpg.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Boiled Duck Eggs</h5>
+                        <p class="card-text">Price: $24</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://www.willflyforfood.net/wp-content/uploads/2017/09/filipino-street-food-banana-q1.jpg.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Skewered Banana</h5>
+                        <p class="card-text">Price: $15</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://www.willflyforfood.net/wp-content/uploads/2017/09/filipino-street-food-empanada.jpg.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Empanada</h5>
+                        <p class="card-text">Price: $30</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://www.willflyforfood.net/wp-content/uploads/2017/09/filipino-street-food-fish-balls.jpg.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Fish Balls</h5>
+                        <p class="card-text">Price: $10</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://www.willflyforfood.net/wp-content/uploads/2017/09/filipino-street-food-isaw.jpg.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Chicken Intestines</h5>
+                        <p class="card-text">Price: $18</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://www.willflyforfood.net/wp-content/uploads/2017/09/filipino-street-food-kwek-kwek1.jpg.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Egg Waffles</h5>
+                        <p class="card-text">Price: $12</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="col-md-12 text-center">
+                    <h2>Order Form</h2>
+                    <div class="counter mt-3">
+                        <span>Total Items Ordered: </span>
+                        <span id="totalItems">0</span>
+                    </div>
+                    <div class="counter mt-3">
+                        <span>Boiled Duck Eggs: </span>
+                        <button id="minus1" class="btn btn-secondary">-</button>
+                        <span id="quantity1">0</span>
+                        <button id="plus1" class="btn btn-secondary">+</button>
+                    </div>
+                </div>
+                <div class="col-md-12 text-center">
+                    <div class="counter mt-3">
+                        <span>Skewered Banana: </span>
+                        <button id="minus2" class="btn btn-secondary">-</button>
+                        <span id="quantity2">0</span>
+                        <button id="plus2" class="btn btn-secondary">+</button>
+                    </div>
+                </div>
+                <div class="col-md-12 text-center">
+                    <div class="counter mt-3">
+                        <span>Empanada: </span>
+                        <button id="minus3" class="btn btn-secondary">-</button>
+                        <span id="quantity3">0</span>
+                        <button id="plus3" class="btn btn-secondary">+</button>
+                    </div>
+                </div>
+                <div class="col-md-12 text-center">
+                    <div class="counter mt-3">
+                        <span>Fish Ball: </span>
+                        <button id="minus4" class="btn btn-secondary">-</button>
+                        <span id="quantity4">0</span>
+                        <button id="plus4" class="btn btn-secondary">+</button>
+                    </div>
+                </div>
+                <div class="col-md-12 text-center">
+                    <div class="counter mt-3">
+                        <span>Chicken Intestines: </span>
+                        <button id="minus5" class="btn btn-secondary">-</button>
+                        <span id="quantity5">0</span>
+                        <button id="plus5" class="btn btn-secondary">+</button>
+                    </div>
+                </div>
+                <div class="col-md-12 text-center">
+                    <div class="counter mt-3">
+                        <span>Egg Waffles: </span>
+                        <button id="minus6" class="btn btn-secondary">-</button>
+                        <span id="quantity6">0</span>
+                        <button id="plus6" class="btn btn-secondary">+</button>
+                    </div>
+                </div>
+                <div class="col-md-12 text-center mt-3">
+                    <span>Total Bill: $</span><span id="totalBill">0</span>
+                </div>
+                <div class="col-md-12 text-center mt-3">
+                    <span>Cash: $</span><input type="number" id="cashInput" min="0" step="0.01">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="col-md-12 text-center">
+                    <h2>Customer Information</h2>
+                    <div class="form-group mt-3">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="address">Address:</label>
+                        <input type="text" class="form-control" id="address" placeholder="Enter your address">
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="contact">Contact Number:</label>
+                        <input type="text" class="form-control" id="contact" placeholder="Enter your contact number">
+                    </div>
+                    <div class="col-md-12 text-center mt-3">
+                        <button id="submitOrder" class="btn btn-success">Submit Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="invoiceModal" tabindex="-1" role="dialog" aria-labelledby="invoiceModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="invoiceModalLabel">Sales Invoice</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="invoiceContent">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="scripts.js"></script>
+
+</body>
+</html>

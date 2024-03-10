@@ -1,0 +1,38 @@
+body {
+    background-image: url('https://www.scoutmag.ph/wp-content/uploads/2019/07/tranquility.gif');
+    background-size: cover;
+    font-family: "Courier New", Courier, monospace;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: bold;
+    color: white;
+}
+
+.card-body,
+.card-title,
+.card-text {
+    color: black !important;
+}
+
+.counter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.counter button {
+    margin: 0 5px;
+}
+
+.modal-body {
+    color: black !important;
+}
+
+@media (max-width: 768px) {
+    .counter {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
